@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* use x for horizontal, y is vertical and we also can use block and 
+inline to snap towards block and inline direction*/
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 2.5rem;
+}
+
+/* scroll-snap-align: has 3 values "start", "center", "mid". This 
+specifies where to snap as we scroll*/
+
+/* scroll-snap-stop: "normal", "always". Default is "normal" and when you are
+on mobile phone and do scroll, it might skip the next content and land 
+into random pages where your scroll slows stop but, when you use "always"
+you will and do a big scroll, instead of skipping past a bunch of things it 
+is actually going to stop on very next page */
+
+/* scroll-padding-top, adds a padding on top. suppose you have a navbar 
+on top and it is blocking your top of you page then this problem is 
+fixed by scroll-padding-top */
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+nav {
+  background-color: rgba(240, 235, 235, 0.5);
+  height: 2rem;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  padding: 0.5rem 0 0;
+}
