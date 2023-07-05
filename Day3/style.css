@@ -1,0 +1,48 @@
+body {
+  background: rgb(70, 69, 69);
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Mozilla version 
+scrollbar-width: none; removes scrollbar
+scrollbar-color: color1 color2; color  is going to be 
+for handler and color2 for Background
+*/
+
+html {
+  scrollbar-width: normal;
+  scrollbar-color: #777 #555;
+}
+
+/* works for Chrome and other browsers 
+Whenever you modify scrollbar it is going to remove its 
+scrollbar and you've to implement to new scrollbar.
+add another pseudoselector
+
+html::-webkit-scrollbar-thumb {} -> handler
+html::-webkit-scrollbar-track {} -> background
+
+using "vw" unit doesnt change your scrollbar size when 
+you zoom in & out
+*/
+
+html::-webkit-scrollbar {
+  width: 1vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #1b1b1b55;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #7775;
+}
+
+html::-webkit-scrollbar-track:hover {
+  background-color: #777;
+}
