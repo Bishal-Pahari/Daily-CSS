@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive images</title>
+  </head>
+  <body>
+    <!-- can use media queries in sizes:
+        sizes=(max-width: 800px) 100vw, 800px 
+        here, on a max width of 800px assume my image is always 
+        100vw and above 800px image is not going to be 100vw
+    -->
+    <!-- <img
+      style="width: 50vw"
+      sizes="50vw"
+      src="https://placehold.co/1600x400/png"
+      srcset="
+        https://placehold.co/400x100/png   400w,
+        https://placehold.co/800x200/png   800w,
+        https://placehold.co/1600x400/png 1600w
+      "
+      alt="ghanti"
+    />
+
+    <div style="font-size: 5vw" id="data"></div>
+
+    <script>
+      window.addEventListener("resize", updateText);
+      updateText();
+
+      function updateText() {
+        const data = document.querySelector("#data");
+        data.textContent = `Width: ${window.innerWidth} Ratio: ${window.devicePixelRatio}`;
+      }
+    </script> -->
+
+    <!-- ------------------------Picture----------------------- -->
+
+    <!-- suppose you want to make a different image for different
+    viewport then you can use this source tag. it gives
+    different images at different sizes.
+
+    make sure in media query it comes in descending order
+    meaning, 800 first, 500 second and so on..
+    -->
+    <picture>
+      <source media="(max-width: 500px)" srcset="./hiking-narrow.jpg" />
+      <img src="./hiking.jpg" style="width: 600px" />
+    </picture>
+  </body>
+</html>
