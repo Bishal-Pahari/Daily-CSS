@@ -10,3 +10,8 @@ The purpose of this repository is to document my progress and showcase the vario
 This repository is organized into daily folders, with each folder representing a specific day of the challenge. Inside each daily folder, you will find the code files and any relevant resources associated with the concepts I've learned that day.
 
 
+## On Hold Due to Exam
+I have put the challenge on hold temporarily due to upcoming exams. I'm committed to my studies during this period but will continue the challenge after my exams are over. Looking forward to resuming my learning journey!
+
+## Next Steps
+After my exams, I plan to pick up the challenge again and dive deeper into more advanced CSS techniques and JavaScript concepts.
